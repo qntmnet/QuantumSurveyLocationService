@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/employee_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:scrollbars="none"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="0dp"
+    app:rippleColor="#C1C1C1"
+    app:strokeColor="#DADCE0"
+    app:strokeWidth="0.01dp">
+    <com.qntm.qntm_survey.swipereveallayout.SwipeRevealLayout
+
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:dragEdge="right"
+        app:mode="same_level">
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:id="@+id/delete_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#ffcc0000">
+
+            <TextView
+
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@android:color/holo_red_dark"
+                android:textColor="@android:color/white"
+                android:text="Delete"/>
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/front_layout"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:id="@+id/img_planimage"
+                    android:src="@drawable/sampleplan"
+                    android:contentDescription="@string/app_name"
+                    app:shapeAppearanceOverlay="@style/RoundedSquare"
+                    app:strokeColor="@color/black_opaque_70"
+                    app:strokeWidth="2dp"
+                    android:scaleType="fitXY"
+                    />
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/txt_locationname"
+                    android:textSize="17dp"
+                    android:text="Title"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_toEndOf="@+id/img_planimage"
+                    android:layout_marginStart="20dp"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </com.qntm.qntm_survey.swipereveallayout.SwipeRevealLayout>
+</com.google.android.material.card.MaterialCardView>
+

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:focusable="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_icon"
+            android:layout_width="48.0dip"
+            android:layout_height="48.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/qsmp_theme_light"
+            android:visibility="gone"
+            android:layout_marginStart="7dp" />
+
+        <TextView
+            android:id="@+id/user_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_medium"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black_opaque_80"
+
+            android:lineSpacingExtra="6sp"
+            android:padding="13dp"
+            android:text="All Contents" />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/divider_main"
+        android:background="@color/default_fragment_bg_color"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginBottom="2.0dip"
+
+        />
+
+    <LinearLayout
+
+        android:id="@+id/liner_certificate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:paddingStart="5dp">
+
+        <ImageView
+            android:id="@+id/img_freez"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="7dp"
+
+            android:layout_marginStart="7dp"
+            app:tint="@color/black_opaque_80" />
+
+        <TextView
+            android:id="@+id/txt_user_manager_certificate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+
+            android:textColor="@color/black_opaque_80"
+            android:lineSpacingExtra="3sp"
+            android:padding="13dp"
+            android:text="Mark as normal" />
+
+    </LinearLayout>
+    <View
+        android:visibility="visible"
+        android:background="@color/default_fragment_bg_color"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginBottom="2.0dip"
+
+        />
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/liner_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:paddingStart="5dp">
+
+        <ImageView
+            android:id="@+id/img_delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="7dp"
+
+            android:layout_marginStart="7dp"
+            app:tint="@color/black_opaque_80" />
+
+        <TextView
+            android:id="@+id/txt_delete_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+
+            android:textColor="@color/black_opaque_80"
+            android:lineSpacingExtra="3sp"
+            android:padding="13dp"
+            android:text="Delete" />
+
+    </LinearLayout>
+    <View
+
+        android:background="@color/default_fragment_bg_color"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginBottom="2.0dip"
+        android:visibility="invisible" />
+</LinearLayout>
